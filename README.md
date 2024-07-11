@@ -1,21 +1,41 @@
+# Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons
+ 
+![Powerpoint  Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons_page-0001](https://github.com/gappeah/Transcriptional-analysis-of-ASCL1-and-the-effects-of-neurogenesis-in-GABAergic-Neurons/assets/114095068/e623ec3e-0128-4d8b-9cf5-39338cb0a906)
 
-# Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons by UP889480
 
 My final year project which I completed in March 2021. 
 
-* Neurogenesis refers to the process by which undifferentiated neural progenitor stem cells generate mature and functional neurons. One of the ways that neurogenesis is controlled is by ASCL1 which has roles in the central nervous system and areas of the peripheral nervous system. 
-* ASCL1 is responsible for the differentiation of cortical interneurons which are derived from the ventral telencephalon from the MGE and CGE regions and are associated with the proliferation and differentiation of immature neurons. 
-* Mutations in ASCL1 are associated with epileptic seizures and schizophrenia with strabismus. What is not known is the relationship between ASCL1 and its target genes and how they play in the development of GABAergic neurons specifically. 
-* Using the Gene Expression Omnibus database and ArrayExpress, 5 datasets were obtained which contain RNA-Seq and microarray data which are processed using Galaxy and GEO2R to obtain gene lists containing both upregulated and downregulated genes. To observe which gene overlap between the datasets and find similar biological meaning between the datasets. The datasets were placed in a Venn diagram using InteractiVenn. 
-* The gene overlap is processed in g:profiler and STRING to identify several proteins linked to ASCL1 and GABAergic neurogenesis: 
+## Aims
+* To understand the role of regulation of ASCL1 within GABAergic neurons
+* To Identify co-expression groups that occur alongside ASCL1
+* To investigate the role of ASCL1 targets genes by gene ontology
+
+These aims will be investigated by collecting the next-generation sequences and performing a comparative analysis on existing gene data sets to identify expressions of ASCL1 target genes in different cell clusters
+achieved by using bioinformatics software. This will result in the 2D graphical representation of the genes and their expression patterns.
+
+## Method
+Leveraged bioinformatics platforms, Galaxy and GEO2R and processed 85,744 entries across five datasets to identify differentially expressed genes. 
+Utilised data visualisation tools to highlight overlapping genes and to visualise protein interaction networks. Generated volcano plots and performed data modelling using PCA and UMAP to illustrate sample similarities and data variability.
+
+## Results and Discussions
 1. GAD2 and CALB1/2 are associated with synaptic communication.
-
 2. GATA2 is associated with GABAergic differentiation, NOTCH2 inhibition promotes neural genes related to neurogenesis and PITX2's role appears to be confined in neurogenesis in the midbrain. 
-
 3. Slit2 and its role remains unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology.
 
 
 ## Authors
 
 - [@gappeah](https://github.com/gappeah)
+
+
+## Acknowledgments
+* [Galaxy](https://galaxyproject.org/) is an open, web-based platform for data-intensive biomedical research. It allows users to perform accessible, reproducible, and transparent computational research.
+* [GEO2R](https://www.ncbi.nlm.nih.gov/geo/geo2r/) is an interactive web tool that allows users to compare two or more groups of samples in the Gene Expression Omnibus (GEO) database to identify differentially expressed genes.
+* [g:Profiler](https://biit.cs.ut.ee/gprofiler/) is a web server for functional enrichment analysis and conversions of gene lists, identifiers, and various other information related to gene function and pathways.
+* [STRING](https://string-db.org/) is a database of known and predicted protein-protein interactions. It includes direct (physical) and indirect (functional) associations.
+* [InteractiVenn](http://www.interactivenn.net/) is a web-based tool for the visualization of Venn diagrams for multiple sets with a user-friendly interface.
+* [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) is a public database of gene expression data and a repository for high-throughput functional genomics data.
+* [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/) is a public repository that archives and freely distributes comprehensive sets of gene expression data.
+
+
 
