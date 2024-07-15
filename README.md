@@ -28,7 +28,7 @@ Utilised data visualisation tools to highlight overlapping genes and to visualis
 - [@gappeah](https://github.com/gappeah)
 
 
-## Acknowledgments
+## References
 * [Galaxy](https://galaxyproject.org/) is an open, web-based platform for data-intensive biomedical research. It allows users to perform accessible, reproducible, and transparent computational research.
 * [GEO2R](https://www.ncbi.nlm.nih.gov/geo/geo2r/) is an interactive web tool that allows users to compare two or more groups of samples in the Gene Expression Omnibus (GEO) database to identify differentially expressed genes.
 * [g:Profiler](https://biit.cs.ut.ee/gprofiler/) is a web server for functional enrichment analysis and conversions of gene lists, identifiers, and various other information related to gene function and pathways.
