@@ -20,7 +20,7 @@ Utilised data visualisation tools to highlight overlapping genes and to visualis
 ## Results and Discussions
 1. GAD2 and CALB1/2 are associated with synaptic communication.
 2. GATA2 is associated with GABAergic differentiation, NOTCH2 inhibition promotes neural genes related to neurogenesis and PITX2's role appears to be confined in neurogenesis in the midbrain. 
-3. Slit2 and its role remains unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology.
+3. Slit2 and its role remain unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology.
 
 
 ## Authors
@@ -28,7 +28,7 @@ Utilised data visualisation tools to highlight overlapping genes and to visualis
 - [@gappeah](https://github.com/gappeah)
 
 
-## References
+## Acknowledgements
 * [Galaxy](https://galaxyproject.org/) is an open, web-based platform for data-intensive biomedical research. It allows users to perform accessible, reproducible, and transparent computational research.
 * [GEO2R](https://www.ncbi.nlm.nih.gov/geo/geo2r/) is an interactive web tool that allows users to compare two or more groups of samples in the Gene Expression Omnibus (GEO) database to identify differentially expressed genes.
 * [g:Profiler](https://biit.cs.ut.ee/gprofiler/) is a web server for functional enrichment analysis and conversions of gene lists, identifiers, and various other information related to gene function and pathways.
