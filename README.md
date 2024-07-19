@@ -1,6 +1,6 @@
 # Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons
  
-![Powerpoint  Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons_page-0001](https://github.com/gappeah/Transcriptional-analysis-of-ASCL1-and-the-effects-of-neurogenesis-in-GABAergic-Neurons/assets/114095068/e623ec3e-0128-4d8b-9cf5-39338cb0a906)
+![Powerpoint  Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons_page-0001](https://github.com/user-attachments/assets/96f9c6f7-b374-49fa-8edd-6f5091df033a)
 
 
 My final year project which I completed in March 2021. 
@@ -10,17 +10,18 @@ My final year project which I completed in March 2021.
 * To Identify co-expression groups that occur alongside ASCL1
 * To investigate the role of ASCL1 targets genes by gene ontology
 
-These aims will be investigated by collecting the next-generation sequences and performing a comparative analysis on existing gene data sets to identify expressions of ASCL1 target genes in different cell clusters
+These aims will be investigated by collecting the next-generation sequences and performing comparative analysis on existing gene data sets to identify expressions of ASCL1 target genes in different cell clusters
 achieved by using bioinformatics software. This will result in the 2D graphical representation of the genes and their expression patterns.
 
 ## Method
-Leveraged bioinformatics platforms, Galaxy and GEO2R and processed 85,744 entries across five datasets to identify differentially expressed genes. 
-Utilised data visualisation tools to highlight overlapping genes and to visualise protein interaction networks. Generated volcano plots and performed data modelling using PCA and UMAP to illustrate sample similarities and data variability.
+* Leveraged bioinformatics platforms, Galaxy and GEO2R and processed 85,744 entries across five datasets to identify differentially expressed genes
+* Utilised data visualisation tools to highlight overlapping genes and to visualise protein interaction networks
+* Generated volcano plots and performed data modelling using PCA and UMAP to illustrate sample similarities and data variability
 
 ## Results and Discussions
-1. GAD2 and CALB1/2 are associated with synaptic communication.
-2. GATA2 is associated with GABAergic differentiation, NOTCH2 inhibition promotes neural genes related to neurogenesis and PITX2's role appears to be confined in neurogenesis in the midbrain. 
-3. Slit2 and its role remain unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology.
+1. GAD2 and CALB1/2 are associated with synaptic communication
+2. GATA2 is associated with GABAergic differentiation, NOTCH2 inhibition promotes neural genes related to neurogenesis and PITX2's role appears to be confined to neurogenesis in the midbrain
+3. Slit2 and its role remain unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology
 
 
 ## Authors
