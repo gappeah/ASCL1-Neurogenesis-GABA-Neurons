@@ -2,26 +2,94 @@
  
 ![Powerpoint  Transcriptional analysis of ASCL1 and the effects of neurogenesis in GABAergic Neurons_page-0001](https://github.com/user-attachments/assets/96f9c6f7-b374-49fa-8edd-6f5091df033a)
 
+This project focuses on the transcriptional analysis of the ASCL1 gene and its role in neurogenesis, particularly in the development of GABAergic neurons. Through the integration of multiple genomic datasets and bioinformatics tools, this project analyzes gene expression patterns, identifies key transcription factors, and examines co-expression groups that influence neurogenesis. The study leverages various data engineering techniques for dataset acquisition, processing, and integration, along with data analysis and visualization methods to draw biological insights.
 
-My final year project which I completed in March 2021. 
+## Project Overview
+**Institution**: University of Portsmouth  
+**Program**: BSc (Hons) Biochemistry  
+**Year**: 2020/2021  
+**Supervisor**: Dr. Frank Schubert
 
-## Aims
-* To understand the role of regulation of ASCL1 within GABAergic neurons
-* To Identify co-expression groups that occur alongside ASCL1
-* To investigate the role of ASCL1 targets genes by gene ontology
+## Table of Contents
 
-These aims will be investigated by collecting the next-generation sequences and performing comparative analysis on existing gene data sets to identify expressions of ASCL1 target genes in different cell clusters
-achieved by using bioinformatics software. This will result in the 2D graphical representation of the genes and their expression patterns.
+1. [Data Engineering](#data-engineering)
+    - [Data Acquisition and Storage](#data-acquisition-and-storage)
+    - [Data Processing](#data-processing)
+    - [Data Integration](#data-integration)
+2. [Data Analysis & Visualization](#data-analysis--visualization)
+    - [Differential Gene Expression Analysis](#differential-gene-expression-analysis)
+    - [Gene Ontology (GO) Term Analysis](#gene-ontology-go-term-analysis)
+    - [STRING Analysis](#string-analysis)
+3. [Tools and Technologies](#tools-and-technologies)
+4. [Results](#results)
+5. [Future Research](#future-research)
 
-## Method
-* Leveraged bioinformatics platforms, Galaxy and GEO2R and processed 85,744 entries across five datasets to identify differentially expressed genes
-* Utilised data visualisation tools to highlight overlapping genes and to visualise protein interaction networks
-* Generated volcano plots and performed data modelling using PCA and UMAP to illustrate sample similarities and data variability
+## Data Engineering
 
-## Results and Discussions
-1. GAD2 and CALB1/2 are associated with synaptic communication
-2. GATA2 is associated with GABAergic differentiation, NOTCH2 inhibition promotes neural genes related to neurogenesis and PITX2's role appears to be confined to neurogenesis in the midbrain
-3. Slit2 and its role remain unclear in the process of neurogenesis and may play a minimal role in neural differentiation and maintaining axonal morphology
+### Data Acquisition and Storage
+![Figure 6](https://github.com/user-attachments/assets/ad12dc16-640b-43c4-8eac-3ab846aa1aa0)
+- **Datasets**: The study utilised five publicly available datasets from the Gene Expression Omnibus (GEO) and ArrayExpress, including RNA-Seq and microarray data. These datasets were selected based on relevance to ASCL1 and GABAergic neuron development.
+- **Repositories**: 
+  - Gene Expression Omnibus (GEO): GSE29985, GSE31635, GSE78949, GSE46791
+  - ArrayExpress: E-MTAB-4840
+- **Data Storage**: Raw data was collected and stored using platforms such as ArrayExpress and GEO, ensuring proper organization and versioning.
+
+### Data Processing
+
+The project required extensive preprocessing of genomic data:
+
+- **Quality Control**: FASTQC was used to assess the quality of RNA-Seq data, identifying and removing low-quality sequences with tools like trimmomatic.
+- **Alignment**: HISAT2 was used to align the cleaned RNA-Seq reads to the reference genome (GRCh38.p13) to generate aligned read counts.
+- **Quantification**: Transcript expression was measured using RPKM (Reads Per Kilobase of transcript per Million mapped reads) and quantified with tools like StringTie.
+- **Differential Gene Expression Analysis**: DESeq2 was used to compute differential expression between samples. This step transformed raw counts into meaningful biological insights by identifying upregulated and downregulated genes.
+
+### Data Integration
+
+- **Merged Gene Lists**: The project employed Venn diagrams generated via InteractiVenn to compare overlapping genes between datasets. This enabled identification of key genes involved in GABAergic neuron development.
+- **GO Term Classification**: Gene lists from multiple datasets were analyzed using g:Profiler, a tool for statistical GO Term enrichment, providing insights into molecular function, biological processes, and cellular components.
+
+
+
+## Data Analysis & Visualization
+
+### Differential Gene Expression Analysis
+
+- **Volcano Plots**: GEO2R and Galaxy were used to generate volcano plots, visualizing statistically significant gene expression changes between samples. Upregulated and downregulated genes were identified based on log2 fold change and p-adjusted values.
+
+### Gene Ontology (GO) Term Analysis
+
+- **GO Term Enrichment**: Overlapping gene lists were analyzed with g:Profiler to classify genes into molecular function, biological process, and cellular component categories. This provided a biological context for the identified genes.
+  - Example GO terms: Neurogenesis, neuron differentiation, calcium ion binding, and synaptic communication.
+
+### STRING Analysis
+- **Protein-Protein Interaction (PPI) Networks**: STRING was used to visualize networks of interacting proteins. This analysis highlighted interactions among key proteins such as GAD2, CALB1/2, and NOTCH2, which are involved in neurogenesis and synaptic communication in GABAergic neurons.
+
+
+## Tools and Technologies
+
+- **Data Acquisition**: ArrayExpress, Gene Expression Omnibus (GEO), GEO2R
+- **Data Processing**: FASTQC, Trimmomatic, HISAT2, DESeq2, StringTie
+- **Data Visualization**: GEO2R, Galaxy, InteractiVenn, g:Profiler, STRING
+- **Programming Languages**: Python (for Galaxy), R (for differential expression analysis)
+- **Operating Systems**: Web-based bioinformatics tools and Linux for local data processing
+
+---
+
+## Results
+
+- **Key Findings**: The analysis identified critical genes such as GAD2, CALB1, CALB2, and NOTCH2, which play roles in GABAergic neurogenesis. GO term analysis revealed associations with neurogenesis and neuron differentiation, while STRING analysis uncovered protein-protein interactions related to synaptic communication.
+- **Data Visualization**: Principal Component Analysis (PCA) and Uniform Manifold Approximation and Projection (UMAP) plots were generated to identify clustering patterns and relationships among different samples.
+
+---
+
+## Future Research
+
+- **Adult Neurogenesis**: Future studies could focus on conducting RNA-Seq analysis on adult human brain samples to compare embryonic and adult neurogenesis.
+- **Slit2 Function**: Further research is needed to clarify the role of Slit2 in axonal guidance and its interaction with ASCL1 in neurogenesis.
+
+---
+
+This project demonstrates the integration of data engineering techniques for handling large-scale genomic data with advanced data analysis and visualization methods to generate meaningful biological insights. The use of various bioinformatics platforms and tools highlights both the technical and analytical skills required for the study of transcriptional regulation in neurogenesis.
 
 
 ## Authors
