@@ -85,11 +85,6 @@ The project required extensive preprocessing of genomic data in Galaxy Server:
 - **Adult Neurogenesis**: Future studies could focus on conducting RNA-Seq analysis on adult human brain samples to compare embryonic and adult neurogenesis.
 - **Slit2 Function**: Further research is needed to clarify the role of Slit2 in axonal guidance and its interaction with ASCL1 in neurogenesis.
 
----
-
-This project demonstrates the integration of data engineering techniques for handling large-scale genomic data with advanced data analysis and visualization methods to generate meaningful biological insights. The use of various bioinformatics platforms and tools highlights both the technical and analytical skills required for the study of transcriptional regulation in neurogenesis.
-
-
 ## Authors
 
 - [@gappeah](https://github.com/gappeah)
@@ -103,6 +98,12 @@ This project demonstrates the integration of data engineering techniques for han
 * [InteractiVenn](http://www.interactivenn.net/) is a web-based tool for the visualization of Venn diagrams for multiple sets with a user-friendly interface.
 * [ArrayExpress](https://www.ebi.ac.uk/arrayexpress/) is a public database of gene expression data and a repository for high-throughput functional genomics data.
 * [Gene Expression Omnibus (GEO)](https://www.ncbi.nlm.nih.gov/geo/) is a public repository that archives and freely distributes comprehensive sets of gene expression data.
+* [FASTQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) is a quality control tool for high-throughput sequence data. It provides summaries and visualizations to assess sequencing quality.
+* [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) is a flexible read trimming tool for Illumina NGS data. It removes low-quality bases and adapter sequences.
+* [HISAT2](https://daehwankimlab.github.io/hisat2/) is a fast and sensitive alignment tool for mapping next-generation sequencing reads to a reference genome.
+* [DESeq2](https://bioconductor.org/packages/release/bioc/html/DESeq2.html) is a statistical tool for analyzing count-based RNA-seq data, allowing differential gene expression analysis.
+* [StringTie](https://ccb.jhu.edu/software/stringtie/) is a transcript assembler that reconstructs full-length transcripts and estimates their expression levels from RNA-seq data.
+
 
 
 
