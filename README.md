@@ -36,8 +36,7 @@ This project focuses on the transcriptional analysis of the ASCL1 gene and its r
 
 ### Data Processing
 
-The project required extensive preprocessing of genomic data:
-
+The project required extensive preprocessing of genomic data in Galaxy Server:
 - **Quality Control**: FASTQC was used to assess the quality of RNA-Seq data, identifying and removing low-quality sequences with tools like trimmomatic.
 - **Alignment**: HISAT2 was used to align the cleaned RNA-Seq reads to the reference genome (GRCh38.p13) to generate aligned read counts.
 - **Quantification**: Transcript expression was measured using RPKM (Reads Per Kilobase of transcript per Million mapped reads) and quantified with tools like StringTie.
@@ -47,7 +46,6 @@ The project required extensive preprocessing of genomic data:
 
 - **Merged Gene Lists**: The project employed Venn diagrams generated via InteractiVenn to compare overlapping genes between datasets. This enabled identification of key genes involved in GABAergic neuron development.
 - **GO Term Classification**: Gene lists from multiple datasets were analyzed using g:Profiler, a tool for statistical GO Term enrichment, providing insights into molecular function, biological processes, and cellular components.
-
 
 
 ## Data Analysis & Visualization
